@@ -1,0 +1,45 @@
+blockquote {
+    color: yellow;
+    font-size: 50px;
+}
+
+
+a[href^='https'] {
+
+    color: red;
+}
+
+.list :nth-child(4) {      /*  :last-child не срабатывает */
+
+    background-color: #00A000;
+}
+
+ul + p {
+
+    font-size: 26px;
+}
+
+.text-box :first-child {
+
+    color: pink;
+}
+
+#greycol {
+
+    color: grey;
+}
+
+.text-box div :only-child {
+
+    color: red;
+}
+
+.text-box :nth-child(7) {
+
+    color: green;
+}
+
+.yellow {
+
+    color: yellow;
+}
