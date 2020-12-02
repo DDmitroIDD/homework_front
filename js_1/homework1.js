@@ -9,13 +9,22 @@
 //
 // }
 
-// second
+// second.1
 
 // let mass = Array.from(Array(10).keys()).map((item, i, arr) => {
 //    return i *= i * i;
 //
 // })
 // console.log(mass)
+
+//second.2
+
+ let mass = [1,2,3,4,5,6,7,8,9,10].map((item, i, arr) => {
+   return i *= i * i;
+
+})
+console.log(mass)
+
 
 
 //third
@@ -30,23 +39,23 @@
 
 //fourth
 
-let a = '.#';
-let horizontal = +prompt('Длина горизонтали');
-let vertical = +prompt('Длина вертикали');
-let board = '';
-let line = '';
-
-for (let v = vertical; v > 0; v--) {
-    line = '';
-    for (let h = horizontal; h > 0; h--) {
-        line += a;
-
-    }
-    if (v % 2 === 0) {
-        line = line.split('').reverse().join('');
-
-    }
-    board += line + '\n';
-}
-
-console.log(board)
+// let a = '.#';
+// let horizontal = +prompt('Длина горизонтали');
+// let vertical = +prompt('Длина вертикали');
+// let board = '';
+// let line = '';
+//
+// for (let v = vertical; v > 0; v--) {
+//     line = '';
+//     for (let h = horizontal; h > 0; h--) {
+//         line += a;
+//
+//     }
+//     if (v % 2 === 0) {
+//         line = line.split('').reverse().join('');
+//
+//     }
+//     board += line + '\n';
+// }
+//
+// console.log(board)
