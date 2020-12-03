@@ -11,19 +11,19 @@
 
 // second.1
 
-// let mass = Array.from(Array(10).keys()).map((item, i, arr) => {
-//    return i *= i * i;
-//
-// })
-// console.log(mass)
-
-//second.2
-
- let mass = [1,2,3,4,5,6,7,8,9,10].map((item, i, arr) => {
+let mass = Array.from(Array(10)).map((item, i, arr) => {
    return i *= i * i;
 
 })
 console.log(mass)
+
+//second.2
+//
+//  let mass = [1,2,3,4,5,6,7,8,9,10].map((item, i, arr) => {
+//    return i *= i * i;
+//
+// })
+// console.log(mass)
 
 
 

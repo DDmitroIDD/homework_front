@@ -1,0 +1,28 @@
+#task {
+    background-color: blanchedalmond;
+    width: 200px;
+    height: 200px;
+
+}
+
+#login {
+    margin-top: 30px;
+    margin-left: 10px;
+    border-radius: 5px;
+
+}
+
+#pass {
+    margin-top: 10px;
+    margin-left: 10px;
+    border-radius: 5px;
+
+}
+
+#butt {
+    margin-top: 20px;
+    margin-left: 10px;
+    border-radius: 5px;
+    width: 175px;
+
+}
