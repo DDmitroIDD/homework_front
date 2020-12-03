@@ -48,7 +48,6 @@ const filmName = document.getElementById('filNa');
 
 butt.addEventListener('click', (event) => {
     let promise = fetch(`http://api.tvmaze.com/search/shows?q=${inp.value}`);
-    console.log(inp.value);
 
 
     promise
