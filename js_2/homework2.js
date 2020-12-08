@@ -43,8 +43,7 @@
 
 const inp = document.getElementById('inp');
 const butt = document.getElementById('butt');
-const image = document.getElementById('img');
-const filmName = document.getElementById('filNa');
+const film = document.getElementById('film');
 
 butt.addEventListener('click', (event) => {
     let promise = fetch(`http://api.tvmaze.com/search/shows?q=${inp.value}`);
@@ -60,14 +59,21 @@ butt.addEventListener('click', (event) => {
         .then((item) => {
             console.log('item: ', item);
             for (let i in item) {
-                if (item[i].show.name === inp.value) {
-                    filmName.innerHTML =`${item[i].show.name}`;
-                    filmName.style.border = 'medium groove black';
-                    filmName.style.backgroundColor = 'orange';
-                    image.style.width = '600px';
-                    image.style.height = '800px';
-                    image.setAttribute('src', `${item[i].show.image.original}`)
-                }
+                const span = document.createElement('span');
+                span.innerHTML = `${item[i].show.name}`;
+                span.style.border = 'medium groove black';
+                span.style.backgroundColor = 'orange';
+                span.style.position = 'relative';
+                span.style.right = '250px';
+                span.style.padding = '5px';
+                span.style.fontSize = '200%';
+                const image = document.createElement('img');
+                image.setAttribute('src', `${item[i].show.image.medium}`)
+                image.setAttribute('alt', `${item[i].show.name}`)
+                image.style.margin = '2% 0 2% 60%';
+                film.appendChild(image);
+                film.appendChild(span);
+
 
             }
 
