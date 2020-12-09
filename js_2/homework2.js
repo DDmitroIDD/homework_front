@@ -58,20 +58,22 @@ butt.addEventListener('click', (event) => {
         .then((item) => {
             console.log('item: ', item);
             for (let i in item) {
+                const div = document.createElement('div');
                 const span = document.createElement('span');
                 span.innerHTML = `${item[i].show.name}`;
                 span.style.border = 'medium groove black';
                 span.style.backgroundColor = 'orange';
-                span.style.position = 'relative';
-                span.style.right = '250px';
+                span.style.margin = '10% 0 10% 1%'
                 span.style.padding = '5px';
                 span.style.fontSize = '200%';
                 const image = document.createElement('img');
                 image.setAttribute('src', `${item[i].show.image.medium}`)
                 image.setAttribute('alt', `${item[i].show.name}`)
-                image.style.margin = '2% 0 2% 60%';
-                film.appendChild(image);
-                film.appendChild(span);
+                image.style.margin = '2% 0 2% 40%';
+                film.appendChild(div);
+                div.appendChild(image);
+                div.appendChild(span);
+                div.style.display = 'flex';
 
 
             }
